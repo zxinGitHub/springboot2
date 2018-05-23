@@ -11,7 +11,8 @@
 springboot2.0
 mybatis-plus
 Postgresql
-elasticsearch
+redis
+ELK
 vue
 
 
@@ -21,7 +22,8 @@ vue
 需要各种设计模式去优化代码
 jdk8新特性的熟练使用
 代码的优化和规范
-
+验证默认的数据库连接池HikariCP
+redis hashkey的高级使用
 
 
 
