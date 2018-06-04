@@ -22,8 +22,10 @@ public class ComposeImageTest {
         BufferedImage image = ImageIO.read(imagein);
         BufferedImage image2 = ImageIO.read(imagein2);
         Graphics g = image.getGraphics();
-        g.drawImage(image2, image.getWidth() - image2.getWidth() - 150, image.getHeight() - image2.getHeight() + 100,
-                image2.getWidth() + 400, image2.getHeight() + 200, null);
+        //g.drawImage(image2, image.getWidth() - image2.getWidth() - 150, image.getHeight() - image2.getHeight() + 100,
+        //        image2.getWidth() + 400, image2.getHeight() + 200, null);
+        g.drawImage(image2, -270, 80,
+                image2.getWidth()+500, image2.getHeight()+100, null);
         OutputStream outImage = new FileOutputStream("D:\\ComposeImageTest\\3.jpg");
         JPEGImageEncoder enc = JPEGCodec.createJPEGEncoder(outImage);
         enc.encode(image);
