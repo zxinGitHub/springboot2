@@ -45,24 +45,25 @@ public class MultipartFileTest {
         int statusCode = response.getStatusLine().getStatusCode();
         System.out.println(statusCode);*/
 
-        /*File file = new File("D:\\01.jpg");
+        File file = new File("D:\\01.jpg");
         FileInputStream inputStream = new FileInputStream(file);
         MultipartFile multipartFile = new MockMultipartFile(file.getName(), inputStream);
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpPost httpPost = new HttpPost("http://172.17.118.108:8080/test/uploadImage");
+        HttpPost httpPost = new HttpPost("http://52.90.118.144:8080/makeup/test/uploadImage");
         ContentBody files = new ByteArrayBody(multipartFile.getBytes(), multipartFile.getName());
-        *//*MultipartEntity reqEntity = new MultipartEntity();
-        reqEntity.addPart("imgData",files);//file为请求后台的Fileupload参数
-        httpPost.setEntity(reqEntity);*//*
+        MultipartEntity reqEntity = new MultipartEntity();
+        reqEntity.addPart("uploadfile",files);//file为请求后台的Fileupload参数
+        httpPost.setEntity(reqEntity);
         MultipartEntityBuilder multipartEntityBuilder = MultipartEntityBuilder.create();
         //multipartEntityBuilder.addBinaryBody("imgData", multipartFile.getBytes());
-        multipartEntityBuilder.addPart("imgData",files);
+        multipartEntityBuilder.addPart("uploadfile",files);
         httpPost.setEntity(multipartEntityBuilder.build());
+        //httpPost.setHeader("Test", "testheadervalue");
         CloseableHttpResponse response = httpclient.execute(httpPost);
         int statusCode = response.getStatusLine().getStatusCode();
         System.out.println(statusCode);
         String resutt = EntityUtils.toString(response.getEntity());
-        System.out.println(resutt);*/
+        System.out.println(resutt);
 
 
     }
