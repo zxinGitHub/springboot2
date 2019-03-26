@@ -1,18 +1,13 @@
 package com.example.springboot2.init;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 /**
  * 系统初始化接口
  * Created by zx9035 on 2018/5/18.
  */
-@Component
-public class InitTest implements CommandLineRunner {
+public class InitTest  {
 
-    Logger logger = LoggerFactory.getLogger(InitTest.class);
+    /*Logger logger = LoggerFactory.getLogger(InitTest.class);
 
     @Override
     public void run(String... strings) throws Exception {
@@ -22,5 +17,5 @@ public class InitTest implements CommandLineRunner {
             logger.warn("当前时间"+System.currentTimeMillis());
             Thread.sleep(10000);
         }
-    }
+    }*/
 }
