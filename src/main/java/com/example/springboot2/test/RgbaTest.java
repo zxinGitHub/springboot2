@@ -1,15 +1,10 @@
 package com.example.springboot2.test;
 
-import ch.qos.logback.core.util.FileUtil;
-import com.sun.jmx.snmp.SnmpUnsignedInt;
+
 
 import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.color.ColorSpace;
 import java.awt.image.*;
 import java.io.*;
-import java.util.UUID;
-
 public class RgbaTest {
 
     public static void main(String[] args) throws Exception {
