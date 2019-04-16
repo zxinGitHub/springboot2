@@ -24,7 +24,7 @@ public class MultipartFileTest {
         int statusCode = response.getStatusLine().getStatusCode();
         System.out.println(statusCode);*/
 
-        File file = new File("D:\\01.jpg");
+        /*File file = new File("D:\\01.jpg");
         FileInputStream inputStream = new FileInputStream(file);
         MultipartFile multipartFile = new MockMultipartFile(file.getName(), inputStream);
         CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -42,7 +42,7 @@ public class MultipartFileTest {
         int statusCode = response.getStatusLine().getStatusCode();
         System.out.println(statusCode);
         String resutt = EntityUtils.toString(response.getEntity());
-        System.out.println(resutt);
+        System.out.println(resutt);*/
 
 
     }
